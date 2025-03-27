@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bgimage.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: none; 
+            margin: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Grand Lyle's Paradise</h1>
+        <nav>
+            <a onclick="showSection('home')">HOME</a>
+            <a onclick="showSection('amenities')">AMENITIES</a>
+            <a onclick="showSection('room-rate')">ROOM RATE</a>
+            <a onclick="showSection('reservation')">RESERVATION</a>
+            <a onclick="showSection('about-us')">ABOUT US</a>
+        </nav>
+    </header>
+    
+    <div class="content" id="home">
+        <h2>Your Escape Awaits</h2>
+        <p>Experience luxury and tranquility at The Grand Lyle's Paradise. Enjoy breathtaking views, exceptional service, and top-notch amenities.</p>
+    </div>
+
+    <div class="content" id="amenities">
+        <h2>Amenities</h2>
+        <p>At The Grand Lyle's Paradise, we pride ourselves on providing our guests with a luxurious and relaxing experience. Our wide range of amenities includes:</p>
+        
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+                <h3>Swimming Pools</h3>
+                <img src="bgimage.jpg" alt="Swimming Pool" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Enjoy our stunning outdoor pools surrounded by lush gardens, perfect for relaxation and sunbathing.</p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Spa and Wellness Center</h3>
+                <img src="spa.webp" alt="Spa" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Indulge in rejuvenating treatments and massages at our full-service spa, designed for ultimate relaxation.</p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Fine Dining Restaurants</h3>
+                <img src="restaurant.jpg" alt="Fine Dining" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Savor exquisite cuisine at our on-site restaurants, featuring locally sourced ingredients and diverse menus.</p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Fitness Center</h3>
+                <img src="fitnesscenter.jpg" alt="Fitness Center" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Stay fit during your vacation with our state-of-the-art fitness center, equipped with modern exercise equipment.</p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Kids Club</h3>
+                <img src="kidsclub.jpg" alt="Kids Club" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>We offer a dedicated kids club with supervised activities, ensuring that younger guests have a memorable experience.</p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Billiards Area</h3>
+                <img src="billiards.webp" alt="Billiards Area" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Challenge your friends to a game of billiards in our dedicated billiards area, featuring multiple tables and a relaxed atmosphere.</p>
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="content" id="room-rate">
+        <h2>Room Rates</h2>
+        <p>At The Grand Lyle's Paradise, we offer a variety of room options to suit your needs. Below are our standard rates:</p>
+        
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+                <h3>Deluxe Room</h3>
+                <img src="deluxeroom.jpg" alt="Deluxe Room" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Our Deluxe Rooms offer stunning views and luxurious amenities.</p>
+                <p><strong>Rate: ₱10,000 per night</strong></p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Ocean View Suite</h3>
+                <img src="oceanview.jpg" alt="Ocean View Suite" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Enjoy the breathtaking ocean views from our spacious Ocean View Suites.</p>
+                <p><strong>Rate: ₱15,000 per night</strong></p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Family Suite</h3>
+                <img src="family.jpg" alt="Family Suite" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Perfect for families, our Family Suite features extra space and child-friendly amenities.</p>
+                <p><strong>Rate: ₱20,000 per night</strong></p>
+            </li>
+
+            <li style="margin-bottom: 20px;">
+                <h3>Honeymoon Suite</h3>
+                <img src="honeymoon.jpg" alt="Honeymoon Suite" style="width: 100%; max-width: 600px; border-radius: 10px;">
+                <p>Celebrate your love in our luxurious Honeymoon Suite, complete with romantic amenities.</p>
+                <p><strong>Rate: ₱20,000 per night</strong></p>
+            </li>
+
+        </ul>
+    
+        <h3>Special Offers</h3>
+        <p>Book directly through our website and receive a 10% discount on your stay! Limited-time offer.</p>
+    </div>
+    
+
+    <div class="content" id="reservation">
+        <h2>Reservation</h2>
+    
+        <h3>Step 1: Choose Your Dates</h3>
+        <p>Select your desired check-in and check-out dates using the calendar below:</p>
+        <input type="date" id="checkin" name="checkin">
+        <input type="date" id="checkout" name="checkout">
+    
+        <h3>Step 2: Select Your Room</h3>
+        <p>Choose from our range of luxurious rooms:</p>
+        
+        <!-- Table to display room options and rates -->
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="padding: 10px; background-color: #9ab9ed;">Room Type</th>
+                    <th style="padding: 10px; background-color: #9ab9ed;">Rate (per night)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px;">Deluxe Room</td>
+                    <td style="padding: 10px;">₱10,000</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Ocean View Suite</td>
+                    <td style="padding: 10px;">₱15,000</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Family Suite</td>
+                    <td style="padding: 10px;">₱20,000</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Honeymoon Suite</td>
+                    <td style="padding: 10px;">₱20,000</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <h3>Step 3: Fill Out the Reservation Form</h3>
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="ocean-view">Ocean View Suite</option>
+                <option value="family">Family Suite</option>
+                <option value="honeymoon">Honeymoon Suite</option>
+            </select>
+    
+            <button type="submit">Reserve Now</button>
+        </form>
+    
+        <!-- Hidden Thank You message -->
+        <div id="thank-you-message" style="display:none; margin-top: 20px;">
+            <h2>Thank You for Your Reservation!</h2>
+            <p>We have received your reservation and will contact you soon with confirmation details.</p>
+        </div>
+        
+        <p>If you have any questions or need assistance, please contact our reservations team:</p>
+        <h3>Contact Us</h3>
+        thegrandlyles@paradise.ph
+    </div>
+    
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            document.getElementById('thank-you-message').style.display = 'block'; // Show thank you message
+        });
+    </script>
+    
+    
+
+
+<div class="content" id="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>The Grand Lyle's Paradise!</strong></p>
+    <p>At The Grand Lyle's Paradise, we strive to create unforgettable experiences in a serene and beautiful setting. Nestled between lush mountains and pristine beaches, our resort is the perfect escape for those seeking relaxation, adventure, and a touch of luxury.</p>
+
+    <h3>Our Story</h3>
+    <p>Founded in 2023 by a passionate family of travelers, The Grand Lyle's Paradise began as a small getaway for friends and family. Over the years, we have grown into a premier destination for tourists from around the world. Our founders envisioned a place where guests could enjoy nature without sacrificing comfort, and that vision continues to guide us today.</p>
+
+    <h3>Our Mission</h3>
+    <p>Our mission is to provide exceptional hospitality and create lasting memories for our guests. We believe that every visitor deserves a personal touch, and our dedicated staff works tirelessly to ensure your stay is nothing short of perfect.</p>
+
+    <h3>What We Offer</h3>
+    <ul>
+        <li><strong>Luxurious Accommodations:</strong> Enjoy a variety of room types, from cozy cabins to ocean-view suites, all designed for your comfort.</li>
+        <li><strong>Exquisite Dining:</strong> Savor gourmet meals prepared by our talented chefs using fresh, local ingredients.</li>
+        <li><strong>Activities for Everyone:</strong> Whether you're looking for adventure or relaxation, we offer a range of activities including snorkeling, hiking, yoga, and spa treatments.</li>
+    </ul>
+
+    <h3>Our Values</h3>
+    <ul>
+        <li><strong>Sustainability:</strong> We are committed to preserving the natural beauty of our surroundings through eco-friendly practices.</li>
+        <li><strong>Community:</strong> We believe in giving back to our local community and supporting local businesses.</li>
+        <li><strong>Guest-Centered Service:</strong> Your satisfaction is our top priority, and we go above and beyond to meet your needs.</li>
+    </ul>
+
+    <h3>Why Choose The Grand Lyle's Paradise?</h3>
+    <ul>
+        <li><strong>Stunning Location:</strong> Our resort is set in a breathtaking location, providing stunning views and direct access to nature.</li>
+        <li><strong>Friendly Staff:</strong> Our team is passionate about hospitality and dedicated to making your stay memorable.</li>
+        <li><strong>Tailored Experiences:</strong> From personalized service to curated experiences, we cater to your unique needs.</li>
+    </ul>
+</div>
+
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        showSection('home');
+    </script>
+    
+</body>
+</html>
